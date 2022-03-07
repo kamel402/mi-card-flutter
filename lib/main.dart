@@ -13,38 +13,17 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: Column(
             children: [
-              Container(
-                color: Colors.red,
-                width: 100.0,
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage("images/Kamel.jpeg"),
               ),
-              SizedBox(
-                width: 45.0,
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    color: Colors.yellow,
-                    width: 100.0,
-                    height: 100.0,
-                  ),
-                  Container(
-                    color: Color.fromRGBO(154, 205, 50, 0.5),
-                    width: 100.0,
-                    height: 100.0,
-                  ),
-                ],
-              ),
-              SizedBox(
-                width: 45.0,
-              ),
-              Container(
-                color: Colors.blue,
-                width: 100.0,
-              ),
+              Text("Kamel Gerado",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 40.0,
+                      fontWeight: FontWeight.bold)),
             ],
           ),
         ),
